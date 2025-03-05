@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Collector</title>
+    <script src="script.js"></script>
+</head>
+
+<body style="background-color: gray; padding: 0; margin: 0;">
+
+    <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100vh; margin: 0; padding: 0; justify-content: space-between;">
+        <div id="header" style="width: 100%; font-size: 3vh; background-color: white; margin: 0; padding: 1vh; text-align: center;">
+                <div><b>RANDOM NUMBER COLLECTOR</b></div>
+                <div>A relaxing game by Sam Webster.</div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center; margin: 4vh; padding: 4vh; background-color: white; border-radius: 1vh; width: 50%;">
+            <div id="random_number" style="font-size: 8vh">...</div>
+            <button id="generate_button" onclick="gen_random_number()" style="font-size: 3vh; margin-top: 4vh;">Generate</button>
+        </div>
+
+
+
+        <div id="discovered_numbers" style="display: flex; flex-direction: column; align-items: center; width: 100%; font-size: 3vh; background-color: white; padding: 1vh;">
+            <div>Discovered Numbers</div>
+
+            <!-- Progress Bar -->
+            <div style="width: 100%; height: 2vh; background-color: lightgray; border-radius: 1vh; margin-top: 1vh;">
+                <div id="progress_bar" style="width: 0%; height: 100%; background-color: green; border-radius: 1vh;"></div>
+            </div>
+
+            <div id="progress_text" style="text-align: center;">0%</div>
+            <div id="fraction_text" style="text-align: center;">0 / 40,000,000</div>
+        </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
